@@ -1,8 +1,11 @@
 <template>
   <div id="login">
     <div id="left">
+      <div id="logo">
 
-     
+        <span>沸腾的心，飞扬的梦！</span>
+
+      </div>
 
     </div>
     <div id="right">
@@ -25,13 +28,13 @@
 
         <div id="forget">
           <span >
-            <a href="">忘记密码?</a>
+            <router-link to="/findsecret" target="_blank" >忘记密码?</router-link>
           </span>
         </div>
 
         <el-row class="mb-4">
           <el-button type="success">登录</el-button>
-          <el-button id="default">注册</el-button>
+          <el-button id="default"> <router-link to="/register">注册</router-link></el-button>
         </el-row>
 
         
@@ -80,7 +83,26 @@ export default {
 #left {
   flex: 1;
   background-color: #fff;
- 
+  #logo {
+    width: 320px;
+    height: 350px;
+    // background-color: red;
+    margin: 0 auto;
+    margin-top: 250px;
+    background-image: url('https://avatars.githubusercontent.com/u/11555754?s=200&v=4');
+    background-repeat: no-repeat;
+    background-position: top center;
+    text-align: center;
+    font-size: 32px;
+    span{
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      margin-top: 190px;
+      font-family:"华文行楷";
+    }
+  }
+  
 }
 #right {
   flex: 1;
