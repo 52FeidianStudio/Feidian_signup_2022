@@ -1,7 +1,7 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
-import Home from '../views/Home.vue'
-import Login from '../components/Login.vue'
-import Register from '../components/Register.vue'
+// import Home from '../views/Home.vue'
+import Login from '../views/Login.vue'
+import Register from '../views/Register.vue'
 import HeaderDetail from '../components/HeaderDetail.vue'
 import FindHeader from '../views/FindSecret/FindSecret.vue' 
 import Input1_1 from '../components/FindSecret/Input1-1.vue'
@@ -20,11 +20,6 @@ const routes: Array<RouteRecordRaw> = [
     path:'/login',
     name:"login",
     component:Login
-  },
-  {
-    path:'/ssss',
-    name:"headerdetail",
-    component:HeaderDetail
   },
   {
     path:'/findsecret',
