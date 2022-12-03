@@ -5,7 +5,7 @@
   <!-- <div></div> -->
 </template>
 
-<script setup>
+<script setup lang="ts">
 
 import FindHeader from '../../components/FindSecret/FindHeader.vue'
 

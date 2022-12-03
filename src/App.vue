@@ -12,6 +12,5 @@ export default {
 *{
   margin: 0;
   padding: 0;
-  // background-color:  #f9fbff;
 }
 </style>

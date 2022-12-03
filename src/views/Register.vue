@@ -26,11 +26,10 @@
 </div>
 </template>
 
-<script>
+<script setup lang="ts">
 import { reactive } from '@vue/reactivity'
 import { useRoute,useRouter } from 'vue-router'
-export default {
-    setup(){
+// import 
         const $router = useRouter()
         let ruleForm  = reactive({
             username:"",
@@ -42,12 +41,7 @@ export default {
         function toLogin(){
             $router.push('/login')
         }
-        return {
-        ruleForm,
-    }
-    }
     
-}
 </script>
 
 <style lang="scss" scoped>

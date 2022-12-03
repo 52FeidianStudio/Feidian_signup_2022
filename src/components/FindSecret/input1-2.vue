@@ -19,14 +19,13 @@
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
+
 import { onBeforeUnmount, onBeforeUpdate, onMounted, onUpdated, watch } from '@vue/runtime-core';
 
 import { ref } from '@vue/reactivity'
 // import func from 'vue-editor-bridge';
 import { useRouter } from 'vue-router';
-export default {
-    setup(){
         const input = ref('');
         let isDisabled = ref(true);
         let Time = ref(60);
@@ -74,15 +73,7 @@ export default {
         function toLogin(){
             $router.push('/login')
         }
-        return {
-            input,
-            isDisabled,
-            Time,
-            // isTrue,
-            toLogin
-        }
-    }
-}
+       
 </script>
 
 <style scoped lang="scss"> 

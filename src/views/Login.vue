@@ -44,11 +44,8 @@
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
 import { reactive,ref } from "@vue/reactivity";
-export default {
-  name: "Login",
-  setup() {
     // const userinfo = ref({
     //   username: "",
     //   password: "",
@@ -62,14 +59,7 @@ export default {
       require('../assets/xinan.jpg'),
       require('../assets/ios.jpg'),
     ])
-    return {
-      username,
-      password,
-      data
-      // userinfo,
-    };
-  },
-};
+    
 </script>
 
 <style lang="less" scoped>

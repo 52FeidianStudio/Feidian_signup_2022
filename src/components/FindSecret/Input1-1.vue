@@ -18,15 +18,14 @@
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
+
 
 import { ref } from '@vue/reactivity'
 import { watch } from '@vue/runtime-core';
 // import router from '@/router';
 import { useRouter } from 'vue-router';
 
-export default {
-    setup(){
 
         let input = ref('');
 
@@ -56,13 +55,6 @@ export default {
             $router.push('input2');
         }
 
-        return {
-            input,
-            isDisabled,
-            toInput2,
-        }
-    }
-}
 </script>
 
 <style scoped lang="scss">

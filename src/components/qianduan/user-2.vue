@@ -1,18 +1,14 @@
 <template>
   <el-carousel :interval="5000" arrow="always" height="500px">
     <el-carousel-item v-for="item in imgArr" :key="item.id">
-      <img  :src="item.url" alt="">
+      <img  :src:string="item.url" alt="">
     </el-carousel-item>
   </el-carousel>
 </template>
 
 <script setup lang="ts">
 import { reactive } from "@vue/reactivity";
-
-interface ArrayObj {
-    id:Number,
-    url:string
-}
+import ArrayObj from '../../tsconfig/config'
 
 let imgArr:ArrayObj[] = reactive([
     {
@@ -33,11 +29,7 @@ let imgArr:ArrayObj[] = reactive([
     },
 ])
 
-// let imgArr = reactive([
-//     {
-//         id:Number
-//     }
-// ])
+
 
 </script>
 
