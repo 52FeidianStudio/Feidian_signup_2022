@@ -63,11 +63,11 @@ const handleClose = (key: string, keyPath: string[]) => {
 <style scoped lang="scss">
 .el-menu-vertical-demo:not(.el-menu--collapse) {
   width: 200px;
-  min-height: 100vh;
+  min-height: 100vmax;
 }
 .el-menu{
   width: 119px;
-  height: 100vh;
+  height: 100vmax;
   float: left;
 }
 </style>

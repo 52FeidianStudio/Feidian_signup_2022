@@ -42,13 +42,12 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path:"/home",
-    component:()=>import('../views/Home.vue'),
-    children:[
-      {
-        path:'qianduan',
-        component:()=>import('../views/qianduan/QianDuan.vue')
-      }
-    ]
+    component:()=>import('../views/Main.vue'),
+    
+  },
+  {
+    path:'/signup',
+    component:()=>import('../views/SingUp.vue')
   }
 ]
 

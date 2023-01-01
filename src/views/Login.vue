@@ -33,7 +33,7 @@
         </div>
 
         <el-row class="mb-4">
-          <el-button type="success">登录</el-button>
+          <el-button type="success" @click="toHome">登录</el-button>
           <el-button id="default"> <router-link to="/register">注册</router-link></el-button>
         </el-row>
 
@@ -46,10 +46,13 @@
 
 <script setup lang="ts">
 import { reactive,ref } from "@vue/reactivity";
+import { useRouter } from "vue-router";
     // const userinfo = ref({
     //   username: "",
     //   password: "",
     // });
+
+    const router = useRouter();
     const username = ref('');
     const password = ref('');
 
@@ -59,6 +62,10 @@ import { reactive,ref } from "@vue/reactivity";
       require('../assets/xinan.jpg'),
       require('../assets/ios.jpg'),
     ])
+
+    function toHome() {
+      router.push('/home');
+    }
     
 </script>
 
